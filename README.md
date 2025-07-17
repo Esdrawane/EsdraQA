@@ -55,7 +55,7 @@ Após baixar o driver do navegador (precisa ser a mesma versão do Chrome que vo
 
 Baixar o Python: https://www.python.org/downloads/
 
-Utilizei a versão Python 8 que já tinha no meu computador;
+Utilizei a versão Python 10 que já tinha no meu computador;
 
 Após isso, baixe as bibliotecas abaixo pelo terminal CMD:
 
