@@ -79,7 +79,7 @@ Casos de teste de **API** complementares está na pasta `Casos de teste Folders-
 
 ---
 
-## Cenários de Teste — Gherkin
+## Cenários de Teste Gherkin
 
 Conjunto de cenários escritos em **Gherkin** para validar um fluxo de compra em outro site.
 
