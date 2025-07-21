@@ -110,8 +110,7 @@ obs: Como é uma documentação de um projeto para um cliente, deixo apenas para
 
 ## Autor
 
-| ![Foto](https://avatars.githubusercontent.com/Esdrawane
-) |
+| ![Esdra Wanessa](https://avatars.githubusercontent.com/Esdrawane) |
 | -------------------------------------------------------- |
 | **Esdra Wanessa**                                        |
 | QA Analyst • Test Automation • Python Learner            |
