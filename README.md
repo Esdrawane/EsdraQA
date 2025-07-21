@@ -11,4 +11,12 @@ para o site: https://www.saucedemo.com/
 
 Pata o mesmo teste foi criado casos de testes para teste em API, anexo está o PDF com os casos de testes; 
 
-#Teste
+# Bot Telgram
+
+Esse bot foi criado para enviar mensagens no DM dos usuários dos grupos do Telegram
+Onde pode ser personalizado de acordo com que desejar; 
+
+Foi criado na liguagem Python, ultilizando o VS Conde. 
+
+
+# 
