@@ -119,7 +119,7 @@ Entre em contato:
 
 * [LinkedIn](https://www.linkedin.com/in/esdrawanessa)
 * [GitHub](https://github.com/Esdrawane)
-* Email: [Esdra.wanessa.08@gmail.com]
+* Email: Esdra.wanessa.08@gmail.com
 
 ---
 
