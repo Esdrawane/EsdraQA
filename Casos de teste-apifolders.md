@@ -1,6 +1,6 @@
 # Casos de Teste: API `/folders`
 
-# Endpoint : `GET /folders` — Listar Pastas
+## Endpoint : `GET /folders` — Listar Pastas
 
 ### TC001 - Listar sem pastas cadastradas
 
