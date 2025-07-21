@@ -1,34 +1,34 @@
-# Casos de Teste — API `/folders`
+# Casos de Teste: API `/folders`
 
-## Endpoint: `GET /folders` — Listar Pastas
+# Endpoint : `GET /folders` — Listar Pastas
 
 ### TC001 - Listar sem pastas cadastradas
 
 * **Pré-condição:** Nenhuma pasta criada
 * **Entrada:** GET /folders
 * **Resultado Esperado:** Lista vazia (200 OK)
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC002 - Listar pastas cadastradas
 
 * **Pré-condição:** Pastas previamente criadas
 * **Entrada:** GET /folders
 * **Resultado Esperado:** Lista com pastas existentes (200 OK)
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC003 - Listar grande quantidade de pastas
 
 * **Pré-condição:** Muitas pastas criadas
 * **Entrada:** GET /folders
 * **Resultado Esperado:** Lista completa sem erros (200 OK)
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC004 - Validar exclusão de pasta
 
 * **Pré-condição:** Pasta excluída por outro endpoint
 * **Entrada:** GET /folders
 * **Resultado Esperado:** Pasta não listada
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ---
 
@@ -38,28 +38,28 @@
 
 * **Entrada:** Nome simples
 * **Resultado Esperado:** 201 Created
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC006 - Criar pasta com nome duplicado
 
 * **Pré-condição:** Nome já utilizado anteriormente
 * **Entrada:** Mesmo nome anterior
 * **Resultado Esperado:** Pasta criada (201 Created)
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 * **Observação:** Não há validação de duplicidade. **Ponto de melhoria**.
 
 ### TC007 - Nome com 255 caracteres
 
 * **Entrada:** Nome com exatamente 255 caracteres
 * **Resultado Esperado:** 201 Created
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC008 - Criar subpasta (com pasta pai)
 
 * **Pré-condição:** Pasta pai já criada
 * **Entrada:** Nome da subpasta + ID da pasta pai
 * **Resultado Esperado:** 201 Created
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 * **Observação:** Subpastas são criadas corretamente ao informar o ID do pai
 
 #### Pontos de melhoria:
@@ -75,14 +75,14 @@
 
 * **Entrada:** Novo nome válido
 * **Resultado Esperado:** 200 OK
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC010 - Tentar atualizar outro campo além do nome
 
 * **Entrada:** Campo inválido
 * **Resultado Esperado:** Erro de validação (400 Bad Request)
 * **Resultado Obtido:** 502 Server Error
-* **Status:** ❌ Reprovado
+* **Status:**  Reprovado
 * **Observação:** Não há tratativa para campos inválidos
 
 ### TC011 - Atualizar nome com caracteres excedentes
@@ -90,14 +90,14 @@
 * **Entrada:** Nome > 255 caracteres
 * **Resultado Esperado:** Erro tratado (422 Unprocessable Entity, por exemplo)
 * **Resultado Obtido:** 502 Server Error
-* **Status:** ❌ Reprovado
+* **Status:**  Reprovado
 
 ### TC012 - Atualizar subpasta vinculada à pasta pai
 
 * **Pré-condição:** Subpasta criada dentro de uma pasta pai
 * **Entrada:** Novo nome válido para a subpasta
 * **Resultado Esperado:** 200 OK
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 #### Ponto de melhoria:
 
@@ -113,14 +113,14 @@
 * **Entrada:** ID da pasta
 * **Resultado Esperado:** 204 No Content
 * **Resultado Obtido:** 500 Internal Server Error
-* **Status:** ❌ Reprovado
+* **Status:**  Reprovado
 
 ### TC014 - Excluir pasta já removida
 
 * **Pré-condição:** Pasta foi excluída anteriormente
 * **Entrada:** ID da pasta excluída
 * **Resultado Esperado:** 404 Not Found
-* **Status:** ✅ Aprovado
+* **Status:**  Aprovado
 
 ### TC015 - Excluir subpasta vinculada à pasta pai
 
@@ -128,7 +128,7 @@
 * **Entrada:** ID da subpasta
 * **Resultado Esperado:** 204 No Content
 * **Resultado Obtido:** 500 Internal Server Error
-* **Status:** ❌ Reprovado
+* **Status:**  Reprovado
 
 #### Bug Identificado:
 
