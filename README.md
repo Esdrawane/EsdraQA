@@ -75,7 +75,7 @@ pip install robotframework seleniumlibrary
 obot -d reports tests/suites/fluxo_compra.robot
 ```
 
-Casos de teste de **API** complementares estão anexados em PDF na pasta `api-tests/`.
+Casos de teste de **API** complementares está na pasta `Casos de teste Folders-Api.md`.
 
 ---
 
